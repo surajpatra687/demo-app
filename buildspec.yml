@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  build:
+    commands:
+      - echo "Building the website..."
+  post_build:
+    commands:
+      - echo "Build completed successfully."
+artifacts:
+  files:
+    - '**/*'
+  base-directory: '.'
